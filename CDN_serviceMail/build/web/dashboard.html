@@ -1,0 +1,203 @@
+<html>
+   <head>
+      <link href="./styles/css/alertify.min.css" rel="stylesheet">
+      <link href="./styles/css/datatables.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="./styles/css/bootstrap.css">
+      <link href="./styles/fonts.css" rel="stylesheet">
+      <link href="./styles/css/dataTables.bootstrap.min.css" rel="stylesheet" type="text/css"/>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Dashboard CDN</title>
+   </head>
+<!--    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">CLARO</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Dashboard <span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+        </div>
+    </nav>-->
+<body style="display: none;">
+    <div class="menuContainer"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card text-center">
+                    <div class="card-header">
+                        <h5>Mensajes enviados por proyecto segmentado por dia</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="container" id="table-response-dia">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card text-center">
+                    <div class="card-header">
+                        <h5>Mensajes enviados por proyecto segmentado por mes</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="container" id="table-response-mes">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+<script src="./script/js/jQuery.min.js" ></script>
+<script src="./script/js/datatables.min.js"></script>
+<script src="./script/js/dataTables.buttons.min.js"></script>
+<script src="./script/js/buttons.flash.min.js"></script>
+<script src="./script/js/jszip.min.js"></script>
+<script src="./script/js/vfs_fonts.js"></script>
+<script src="./script/js/buttons.html5.min.js"></script>
+<script src="./script/js/bootstrap.js"></script>  
+<script src="./script/alertify.min.js"></script>
+<script src="./script/cookie.js"></script>
+<script src="./script/base.js"></script>
+<script src="./script/menu.js"></script>
+<script src="./script/DashboardCDN.js"></script>
+<script src="./script/js/popper.min.js" ></script>
+<!--
+<script>
+    var chart = Highcharts.chart('container', {
+
+    chart: {
+        type: 'column'
+    },
+
+    title: {
+        text: 'CLARO | Centro de Notificaciones'
+    },
+
+    subtitle: {
+        text: 'Comparativa por proyecto y pais'
+    },
+
+    legend: {
+        align: 'right',
+        verticalAlign: 'middle',
+        layout: 'vertical'
+    },
+
+    xAxis: {
+        categories: ['Guatemala', 'El Salvador', 'Honduras', 'Nicaragua', 'Costa Rica'],
+        labels: {
+            x: -10
+        }
+    },
+
+    yAxis: {
+        allowDecimals: false,
+        title: {
+            text: ''
+        }
+    },
+
+    series: [{
+        name: 'Consulta saldo',
+        data: [8520, 4780, 3589,6985,5213]
+    }, {
+        name: 'Cambio de plan',
+        data: [253, 470, 125,87,98]
+    }],
+
+    responsive: {
+        rules: [{
+            condition: {
+                maxWidth: 500
+            },
+            chartOptions: {
+                legend: {
+                    align: 'center',
+                    verticalAlign: 'bottom',
+                    layout: 'horizontal'
+                },
+                yAxis: {
+                    labels: {
+                        align: 'left',
+                        x: 0,
+                        y: -5
+                    },
+                    title: {
+                        text: null
+                    }
+                },
+                subtitle: {
+                    text: null
+                },
+                credits: {
+                    enabled: false
+                }
+            }
+        }]
+    }
+});
+
+Highcharts.chart('containerDiario', {
+
+    title: {
+        text: 'CLARO | Centro de Notificaciones'
+    },
+
+    subtitle: {
+        text: 'Envio de mensajes diarios por proyecto'
+    },
+
+    yAxis: {
+        title: {
+            text: ''
+        }
+    },
+
+    xAxis: {
+         categories: ['21-10-2020','22-10-2020','23-10-2020','24-10-2020','25-10-2020','26-10-2020','27-10-2020','28-10-2020']
+    },
+
+    legend: {
+        layout: 'vertical',
+        align: 'right',
+        verticalAlign: 'middle'
+    },
+
+    plotOptions: {
+        series: {
+            label: {
+                connectorAllowed: false
+            },
+            pointStart: 2010
+        }
+    },
+
+    series: [{
+        name: 'Consulta saldo',
+        data: [8790, 4502, 3589, 2569, 4780, 6589, 5659, 4895]
+    }, {
+        name: 'Cambio de plan',
+        data: [258, 365, 145, 489, 875, 759, 123, 478]
+    }],
+
+    responsive: {
+        rules: [{
+            condition: {
+                maxWidth: 500
+            },
+            chartOptions: {
+                legend: {
+                    layout: 'horizontal',
+                    align: 'center',
+                    verticalAlign: 'bottom'
+                }
+            }
+        }]
+    }
+
+});
+</script>
+-->

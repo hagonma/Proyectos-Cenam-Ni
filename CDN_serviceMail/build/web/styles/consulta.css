@@ -1,0 +1,32 @@
+
+
+.menu-img-text{
+  color: #fff;
+  margin: 20px;
+  font-size: 31px;
+  font-weight: 400;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.menu-img > img{
+  width: 220px;
+  height: 200px;
+}
+.menu-img > img:hover{
+  width: 240px;
+  height: 22 
+  0px;
+}
+.buttons{
+  width: 140px;
+  height: 40px;
+}
+
+.div-button{
+  display: block;
+  margin-top: 5px;
+}
+.menu-container-cons{
+  padding-top:100px;
+}

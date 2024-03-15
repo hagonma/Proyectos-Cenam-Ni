@@ -1,0 +1,203 @@
+
+.first-col {
+  width: 300px;
+  height: 400px;
+  background: #cccc;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 20px;
+  margin: 20px;
+  overflow-y: auto;
+  max-width: 400px;
+  word-break: break-all;
+  font-weight: bold;
+}
+.second-col {
+  width: 300px;
+  height: 0;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  text-align: justify;
+  margin: 20px;
+  max-width: 400px;
+  float: left;
+  position: fixed;
+  z-index: 9999;
+}
+.second-col1 {
+  width: 300px;
+  height: 0;
+  padding-top: 20px;
+  padding-left: 365px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  text-align: justify;
+  margin: 20px;
+  max-width: 400px;
+  float: left;
+  position: fixed;
+  z-index: 9999;
+}
+.modal-body{
+  text-align: center;
+}
+.ubicacion-boton{
+  border: 1px solid #444;
+  width: 130px;
+  height: 100px;
+  padding: 20px;
+  text-align: center;
+  display: inline;
+  margin-right: 20px;
+}
+
+.centered{
+  padding-left: 10%;
+}
+.input-hidden {
+  position: absolute;
+  left: -9999px;
+}
+
+
+input[type=radio] + label>img {
+  width: 50px;
+  height: 50px;
+  transition: 500ms all;
+}
+
+.ubicacion-boton-checked {
+  border: 1px solid #fff;
+  box-shadow: 0 0 3px 3px #922B21;
+  border: 1px solid #444;
+  width: 130px;
+  height: 100px;
+  padding: 20px;
+  text-align: center;
+  display: inline;
+}
+
+.boton-modal-checked {
+  border: 1px solid #fff;
+  box-shadow: 0 0 3px 3px #922B21;
+  border: 1px solid #444;
+  width: 80px ;
+  height: 80px ;
+  padding: 20px ;
+  text-align: center;
+  display: inline;
+}
+
+.tipo-compra{
+  background-color: #D0D3D4;
+  font-weight: bolder;
+}
+
+
+.second-col2 {
+  width: 300px;
+  height: 0;
+  padding-top: 20px;
+  padding-left: 700px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  text-align: justify;
+  margin: 20px;
+  max-width: 400px;
+  float: left;
+  position: fixed;
+  z-index: 9999;
+}
+
+.contenido{
+  --background-color: #D0D3D4;
+  width: auto;
+  height: auto;
+  font-size: 14px;
+  text-align: left;
+  margin: 10px 0px 10px 0px;
+}
+
+p{
+  text-align: right;
+  margin-top: 10px;
+  border-top: 10px;
+}
+
+.boton-modal{
+  width: 80px ;
+  height: 80px ;
+  padding: 10px;
+  background-color: #FFFF;
+}
+
+table{
+  padding-left: 20px;
+  border-spacing: 8px;
+  text-align: center;
+}
+
+th, td{
+  padding: 15px;
+}
+.cargo-body{
+ padding-left: 45px;
+ padding: 0px;
+}
+.paquete-color{
+  background-color: #E03A00;
+  color: #FBFCFC;
+}
+
+.modal-header-2{
+  padding-left: 0px;
+}
+
+.col-img{
+  width: 100px;
+  height: 100px;
+  z-index: 999999;
+}
+
+.menu-container-img{
+  padding-left: 14.5%;
+}
+.menu-container{
+  padding-left: 10%;
+}
+
+body.modal-open .row{
+    -webkit-filter: blur(30px);
+    -moz-filter: blur(30px);
+    -o-filter: blur(30px);
+    -ms-filter: blur(30px);
+    filter: blur(30px);
+}
+  
+.modal-backdrop {background: #f7f7f7;}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #7F8C8D;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #515A5A;
+}
+::-webkit-scrollbar-corner {
+    background: rgba(0,0,0,0);
+}

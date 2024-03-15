@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Login</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="./styles/css/alertify.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="./styles/css/bootstrap.css">
+      <link href="./styles/fonts.css" rel="stylesheet">
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <LINK REL=StyleSheet HREF="./styles/login.css" TYPE="text/css"/>
+      <!------ Include the above in your HEAD tag ---------->
+   </head>
+   <body>
+      <div id="login">
+         <h3 class="text-center text-white pt-5"><img src="./img/logoclaro.png" width="150" height="150"></h3>
+         <div class="container">
+            <div id="login-row" class="row justify-content-center align-items-center">
+               <div id="login-column" class="col-md-6">
+                  <div id="login-box" class="col-md-12 texto">
+                     <form id="login-form" class="form" action="" method="post">
+                        <h3 class="text-center">Login</h3>
+                        <div class="form-group texto">
+                           <label for="username">Usuario:</label><br>
+                           <input type="text" name="username" id="username" class="form-control">
+                        </div>
+                        <div class="form-group texto">
+                           <label for="password">Contraseña:</label><br>
+                           <input type="password" name="password" id="password" class="form-control">
+                        </div>
+                        <div class="form-group texto">
+                           <label for="country">País:</label><br>
+                           <select class="form-control" name="country" id ="country">
+                              <option value="101">Guatemala</option>
+                              <option value="102">El Salvador</option>
+                              <option value="103">Honduras</option>
+                              <option value="104">Nicaragua</option>
+                              <option value="106">Costa Rica</option>
+                              <option value="105">Panamá</option>
+                           </select>
+                        </div>
+                        <div class="form-group d-flex">
+                           <button  id= "log" class="btn ml-auto" type="button">Iniciar Sesion</button>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script src="./script/js/jQuery.min.js" ></script>
+      <script src="./script/js/bootstrap.js"></script>    
+      <script src="./script/cookie.js"></script>  
+      <script src="./script/alertify.js"></script> 
+      <script src="./script/base.js"></script>  
+      <script src="./script/login.js"></script>
+      <script src="./script/js/popper.min.js" ></script>
+      <script src="./script/alertify.min.js"></script>
+   </body>
+</html>

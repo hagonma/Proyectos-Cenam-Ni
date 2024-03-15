@@ -1,0 +1,26 @@
+
+.menu-img-text{
+  margin: 20px;
+  font-size: 28px;
+  font-weight: 400;
+  text-align: left;
+  color: #cccc;
+}
+.row-form{
+  padding-left: 10%;
+}
+
+.menu-img > img{
+  width: 230px;
+  height: 200px;
+}
+.menu-img > img:hover{
+  width: 240px;
+  height: 220px;
+}
+!important{
+  .input-group-text{
+    background-color: null;
+    border: none;
+  }
+}

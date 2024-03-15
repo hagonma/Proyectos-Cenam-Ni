@@ -1,0 +1,148 @@
+<html>
+   <head>
+      <link href="./styles/css/alertify.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="./styles/css/bootstrap.css">
+      <link href="./styles/fonts.css" rel="stylesheet">
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Mensaje</title>
+   </head>
+   <body style="display: none;">
+      <div class="menuContainer"></div>
+      <div class="container">
+         <div class="row" style="margin-top: 20px; margin-bottom: 20px;">
+            <div class="col-8" style="font-weight: bold; font-size: 24;">
+               Mensaje
+               <div class="form-group">
+                  <select class="form-control" style="width: 26%; height: 5%; display: inline" id="filtroPais">
+                  </select> 
+                  <select class="form-control" style="width: 26%; height: 5%; display: inline" id="filtroTipoMensaje">
+                  </select> 
+                  <button type="button" class="btn btn-info" id="filtrar" style="display: inline;">Buscar</button>
+                  <button type="button" class="btn btn-info" id="refrescar" style="display: inline;">Sin Filtro</button>
+               </div>
+            </div>
+            <div class="col-4" style="text-align: right;">
+               <button type="button" class="btn btn-primary pull-right" id="boton-nuevo"data-toggle="modal" data-target="#modalNuevo">Nuevo</button>
+            </div>
+         </div>
+         <div class="row">
+            <table class="table table-bordered table-hover">
+               <thead class="thead-light">
+                  <tr>
+                     <th scope="col">Id</th>
+                     <th scope="col">Tipo Mensaje</th>
+                     <th scope="col">Descripción</th>
+                     <th scope="col">Pais</th>
+                     <th scope="col">Acción</th>
+                  </tr>
+               </thead>
+               <tbody id="body-crud">
+               </tbody>
+            </table>
+         </div>
+         <div>
+         <center>
+            <button class="btn btn-primary" id="btnPerso">Personalizado</button>
+            <button class="btn btn-secondary" id="btnPrede">Predeterminado</button>       
+         </center>
+         </div>
+         <br>
+          <div class="row" id="containerEnviar" style="display: none;">
+            <table class="table table-bordered table-hover">
+               <thead class="thead-light">
+                  <tr>
+                     <th scope="col">Número:</th>
+                     <td><input type="number" id="numeroDestino"  class="form-control"/></td>
+
+                     <th scope="col" id="thCodigo">Código del Mensaje</th>
+                     <td id="tdCodigo">
+                        <input type="number" id="codigoMensaje" class="form-control"/>
+                     </td>
+
+                     <th scope="col" id="thDescripcion">Descripción</th>
+                     <td id="tdDescripcion">
+                        <input type="text" id="descripcion" class="form-control"/>
+                     </td>
+
+                     <th scope="col">País</th>
+                     <td>
+                        <select class="form-control" style=" display: inline" id="selPais2">
+                        </select> 
+                     </td>
+                  </tr>
+                  <tr>
+                      <td colspan="5"></td>
+                     <td >
+                         <input type="button" value="Enviar" name="enviar" class="btn btn-primary" onclick="enviarMensaje();"/>
+                     </td>
+                  </tr>
+
+               </thead>
+               <tbody id="body-crud">
+               </tbody>
+            </table>
+         </div>
+
+         <div class="modal fade" id="modalNuevo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <h5 class="modal-title" id="exampleModalLabel">Mensaje</h5>
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">&times;</span>
+                     </button>
+                  </div>
+                  <div class="modal-body">
+
+                     <div class="form-group">
+                        <label for="txtDescripcion">Descripcion:</label>
+                        <input type="text" class="form-control" id="txtDescripcion">
+                     </div>
+                     <div class="form-group">
+                        <label for="selPais">País:</label>
+                        <select class="form-control" id="selPais">
+                        </select>
+                     </div>
+                     <div class="form-group">
+                        <label for="selTipoMensaje">Tipo mensaje:</label>
+                        <select class="form-control" id="selTipoMensaje">
+                        </select>
+                     </div>
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                     <button type="button" class="btn btn-success" id="insertar">Guardar</button>
+                     <button type="button" class="btn btn-success" id="editar" style="display: none; ">Editar</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="modal fade" id="modalEliminar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <h5 class="modal-title" id="exampleModalLabel">Esta seguro de eliminar?</h5>
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">&times;</span>
+                     </button>
+                  </div>
+                  <div class="modal-body" style="text-align: center;">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                     <button type="button" class="btn btn-danger" id="eliminar">Si</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script src="./script/js/jQuery.min.js" ></script>
+      <script src="./script/js/bootstrap.js"></script>  
+      <script src="./script/alertify.min.js"></script>
+      <script src="./script/alertify.js"></script>
+      <script src="./script/cookie.js"></script>
+      <script src="./script/base.js"></script>
+      <script src="./script/menu.js"></script>
+      <script src="./script/mensaje.js"></script>
+      <script src="./script/js/popper.min.js" ></script>
+      <script src="./script/js/jquery.jrumble.1.3.js" ></script>
+   </body>
+</html>
